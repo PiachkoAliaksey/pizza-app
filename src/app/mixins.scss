@@ -1,0 +1,36 @@
+$phone: 360px;
+$bigPhone: 768px;
+$tablet: 1024px;
+$desktop: 1366px;
+
+
+@mixin useSmallPhone {
+  @media (width < $bigPhone) {
+    @content;
+  }
+}
+
+@mixin useBigPhone {
+  @media ($bigPhone <=width < $tablet) {
+    @content;
+  }
+}
+
+@mixin usePhone {
+  @media (width < $tablet) {
+    @content;
+  }
+}
+
+@mixin useTablet {
+  @media ($tablet <=width < $desktop) {
+    @content;
+  }
+}
+
+@mixin useDesktop {
+  @media ($desktop <=width) {
+    @content;
+  }
+}
+

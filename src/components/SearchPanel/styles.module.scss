@@ -1,0 +1,13 @@
+.searchPanel {
+    padding: 20px;
+    flex: 1;
+
+    input {
+        min-height: 80px;
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 52px;
+    }
+}

@@ -1,0 +1,22 @@
+:root {
+  --primary-color: #ff6b6b;
+  --secondary-color:#f42723;
+  --counter-color:#7ffa05;
+  --primary-hover-color:#f88484;
+  --background-color: #f8f9fa;
+  --text-color: #333;
+}
+
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}

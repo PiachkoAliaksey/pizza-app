@@ -1,0 +1,43 @@
+@import "../../app/mixins.scss";
+
+.cart {
+    top: 0;
+    right: -150%;
+    width: 400px;
+    height: 90vh;
+
+    position: absolute;
+    z-index: 10;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    margin: 20px;
+    margin-top: 85px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+
+    @include useSmallPhone {
+        width: 320px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+}
+
+.cartVisible {
+    right: 0;
+}
+
+.cartItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.removeBtn {
+    width: fit-content;
+}

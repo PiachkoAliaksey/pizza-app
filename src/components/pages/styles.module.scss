@@ -1,0 +1,22 @@
+@import "../../app/mixins.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  grid-row-start: 2;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  @include useSmallPhone {
+    flex-direction: column;
+  }
+}
+
+.wrapperHeader {
+  position: relative;
+}
