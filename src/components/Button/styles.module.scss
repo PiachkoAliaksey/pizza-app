@@ -10,6 +10,7 @@
     transition: background-color 0.3s ease;
 
     &:hover {
-        background-color: darken(#ff4d4d, 10%);
+        background-color: #ff4d4d;
+        opacity: 0.5;
     }
 }
